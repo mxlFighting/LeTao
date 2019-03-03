@@ -1,3 +1,48 @@
-html{
-    font-size: 26.66667vw;
+@import 'base.less';
+
+/* 主体 */
+#main{
+    a{
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
+    /* 导航条 */
+    .nav{
+        padding: .1rem;
+    }
+    /* 广告 */
+    .banner{
+        padding: 0 .1rem;
+        .left{
+            a{
+                display: flex;
+                img{
+                    width: 50%;
+                    height: 1.2rem;
+                }
+            }
+        }
+        .right{
+            a{
+                img{
+                    height: 2.4rem;
+                }
+            }
+        }
+    }
+    /* 品牌 */
+    .brand,
+    .sport,
+    .woman,
+    .man{
+        padding: .1rem .1rem 0;
+        img{
+            width: 100%;
+        }
+    }
+    .man{
+        padding-bottom: .1rem;
+    }
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- 移动端写完整视口 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘分类页面</title>
+
+    <!-- 引入mui css文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 移入字体图标css文件 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入自己写的css文件 -->
+    <link rel="stylesheet" href="./less/category.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <div class="left">
+            <a href="#">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="center">
+            <input type="search" placeholder="请输入要搜索的商品">
+        </div>
+        <div class="right">
+            <a href="#">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- 主体 -->
+    <main id="main">
+        <div class="left">
+            <!-- <div class="mui-scroll-wrapper">
+                <div class="mui-scroll"> -->
+                    <!--这里放置真实显示的DOM内容-->
+                    <ul>
+                        <li><a href="#">运动馆</a></li>
+                        <li><a href="#">女士馆</a></li>
+                        <li><a href="#">男士馆</a></li>
+                        <li><a href="#">帆布馆</a></li>
+                        <li><a href="#">户外馆</a></li>
+                    </ul>
+                <!-- </div>
+            </div> -->
+        </div>
+        <div class="right"></div>
+    </main>
+
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3"><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></div>
+            <div class="mui-col-xs-3"><a class="active" href="category.html"><i class="fa fa-bars"></i><span>分类</span></a></div>
+            <div class="mui-col-xs-3"><a href="cart.html"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></div>
+            <div class="mui-col-xs-3"><a href="user.html"><i class="fa fa-user"></i><span>个人中心</span></a></div>
+        </div>
+    </footer>
+
+    <!-- 引入mui js文件 -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!-- 引入zepto js文件 -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <!-- 引入模板引擎 -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="./js/category.js"></script>
+</body>
+
+</html>

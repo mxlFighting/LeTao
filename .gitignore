@@ -54,5 +54,3 @@ node_modules
 
 数据库连接.txt
 
-# 忽略一些demo
-./*.html
