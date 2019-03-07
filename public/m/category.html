@@ -21,7 +21,7 @@
     <!-- 头部 -->
     <header id="header">
         <div class="left">
-            <a href="#">
+            <a href="javascript:history.back();">
                 <i class="fa fa-arrow-left"></i>
             </a>
         </div>
@@ -29,7 +29,7 @@
             <input type="search" placeholder="请输入要搜索的商品">
         </div>
         <div class="right">
-            <a href="#">
+            <a href="search.html">
                 <i class="fa fa-search"></i>
             </a>
         </div>
@@ -38,20 +38,29 @@
     <!-- 主体 -->
     <main id="main">
         <div class="left">
-            <!-- <div class="mui-scroll-wrapper">
-                <div class="mui-scroll"> -->
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
                     <!--这里放置真实显示的DOM内容-->
-                    <ul>
-                        <li><a href="#">运动馆</a></li>
-                        <li><a href="#">女士馆</a></li>
-                        <li><a href="#">男士馆</a></li>
-                        <li><a href="#">帆布馆</a></li>
-                        <li><a href="#">户外馆</a></li>
+                    <ul class="mui-table-view">
+                        <!-- <li class="mui-table-view-cell active">运动馆</li>
+                        <li class="mui-table-view-cell">女士馆</li>
+                        <li class="mui-table-view-cell">男士馆</li>
+                        <li class="mui-table-view-cell">帆布馆</li>
+                        <li class="mui-table-view-cell">户外馆</li> -->
                     </ul>
-                <!-- </div>
-            </div> -->
+                </div>
+            </div>
         </div>
-        <div class="right"></div>
+        <div class="right">
+            <div class="mui-row">
+                <!-- <div class="mui-col-xs-4">
+                    <a href="#">
+                        <img src="./images/brand1.png" alt="">
+                        <p>耐克</p>
+                    </a>
+                </div> -->
+            </div>
+        </div>
     </main>
 
     <!-- 底部 -->
@@ -63,6 +72,29 @@
             <div class="mui-col-xs-3"><a href="user.html"><i class="fa fa-user"></i><span>个人中心</span></a></div>
         </div>
     </footer>
+
+    <!-- 左侧分类模板 -->
+    <script id="leftTpl" type="text/html">
+        {{each rows value i}}
+            <li data-id="{{value.id}}" class="mui-table-view-cell {{i == 0 ? 'active' : ''}}">{{value.categoryName}}</li>
+        {{/each}}
+    </script>
+
+    <!-- 右边分类模板 -->
+    <script id="rightTpl" type="text/html">
+        {{if rows.length > 0}}
+        {{each rows value i}}
+        <div class="mui-col-xs-4">
+            <a href="#">
+                <img src="{{value.brandLogo}}" alt="">
+                <p>{{value.brandName}}</p>
+            </a>
+        </div>
+        {{/each}}
+        {{else}}
+        <p>实在做不到了</p>
+        {{/if}}
+    </script>
 
     <!-- 引入mui js文件 -->
     <script src="./lib/mui/js/mui.js"></script>

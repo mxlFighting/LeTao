@@ -1,0 +1,41 @@
+@import 'base.less';
+
+/* 主体部分 */
+#main {
+    background-color: #fff;
+
+    .productList {
+        .mui-card-header {
+            a {
+                font-size: .14rem;
+
+                &.active {
+                    color: #f00;
+                }
+            }
+        }
+
+        .mui-card-content {
+            .productBox{
+                box-shadow: 1px 0 0 #ccc; 
+                padding: .1rem;
+                a {
+                    display: block;
+                    text-align: center;
+    
+                    img {
+                        width: 100%;
+                    }
+    
+                    .productDetail {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2; // 控制多行的行数
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+    }
+}

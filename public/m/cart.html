@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- 移动端写完整视口 -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐淘登录页面</title>
+
+    <!-- 引入mui css文件 -->
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <!-- 移入字体图标css文件 -->
+    <link rel="stylesheet" href="./lib/fontAwesome/css/font-awesome.css">
+    <!-- 引入自己写的css文件 -->
+    <link rel="stylesheet" href="./less/cart.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header">
+        <div class="left">
+            <a href="javascript:history.back();">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="center">
+            <h4>购物车</h4>
+        </div>
+        <div class="right">
+            <a href="index.html">
+                <i class="fa fa-refresh"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- 主体部分 -->
+    <main id="main">
+        <div id="pullrefresh" class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <!--这里放置真实显示的DOM内容-->
+                <ul class="mui-table-view">
+                    <li class="mui-table-view-cell mui-transitioning">
+                        <!-- 侧滑模块 -->
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-blue" style="transform: translate(0px, 0px);">编辑</a>
+                            <a class="mui-btn mui-btn-red" style="transform: translate(0px, 0px);">删除</a>
+                        </div>
+                        <a class="mui-navigate-right mui-slider-handle">
+                            <div class="productPic">
+                                <img src="./images/product.jpg" alt="">
+                                <div class="mui-input-row mui-checkbox mui-left">
+                                    <input class="checkbox" name="checkbox" value="Item 2" type="checkbox" checked="">
+                                </div>
+                            </div>
+                            <div class="productDetail">
+                                <p class="productName">
+                                    匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮
+                                </p>
+                                <p class="productPrice">
+                                    <strong>¥499.1</strong>
+                                    <del>¥699.1</del>
+                                </p>
+                                <div class="productParams">
+                                    <p class="size">
+                                        鞋码：40
+                                    </p>
+                                    <p class="num">
+                                        数量：2双
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell mui-transitioning">
+                        <!-- 侧滑模块 -->
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-blue" style="transform: translate(0px, 0px);">编辑</a>
+                            <a class="mui-btn mui-btn-red" style="transform: translate(0px, 0px);">删除</a>
+                        </div>
+                        <a class="mui-navigate-right mui-slider-handle">
+                            <div class="productPic">
+                                <img src="./images/product.jpg" alt="">
+                                <div class="mui-input-row mui-checkbox mui-left">
+                                    <input class="checkbox" name="checkbox" value="Item 2" type="checkbox">
+                                </div>
+                            </div>
+                            <div class="productDetail">
+                                <p class="productName">
+                                    匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮
+                                </p>
+                                <p class="productPrice">
+                                    <strong>¥499.1</strong>
+                                    <del>¥699.1</del>
+                                </p>
+                                <div class="productParams">
+                                    <p class="size">
+                                        鞋码：40
+                                    </p>
+                                    <p class="num">
+                                        数量：2双
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell mui-transitioning">
+                        <!-- 侧滑模块 -->
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-blue" style="transform: translate(0px, 0px);">编辑</a>
+                            <a class="mui-btn mui-btn-red" style="transform: translate(0px, 0px);">删除</a>
+                        </div>
+                        <a class="mui-navigate-right mui-slider-handle">
+                            <div class="productPic">
+                                <img src="./images/product.jpg" alt="">
+                                <div class="mui-input-row mui-checkbox mui-left">
+                                    <input class="checkbox" name="checkbox" value="Item 2" type="checkbox">
+                                </div>
+                            </div>
+                            <div class="productDetail">
+                                <p class="productName">
+                                    匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮
+                                </p>
+                                <p class="productPrice">
+                                    <strong>¥499.1</strong>
+                                    <del>¥699.1</del>
+                                </p>
+                                <div class="productParams">
+                                    <p class="size">
+                                        鞋码：40
+                                    </p>
+                                    <p class="num">
+                                        数量：2双
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell mui-transitioning">
+                        <!-- 侧滑模块 -->
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-blue" style="transform: translate(0px, 0px);">编辑</a>
+                            <a class="mui-btn mui-btn-red" style="transform: translate(0px, 0px);">删除</a>
+                        </div>
+                        <a class="mui-navigate-right mui-slider-handle">
+                            <div class="productPic">
+                                <img src="./images/product.jpg" alt="">
+                                <div class="mui-input-row mui-checkbox mui-left">
+                                    <input class="checkbox" name="checkbox" value="Item 2" type="checkbox">
+                                </div>
+                            </div>
+                            <div class="productDetail">
+                                <p class="productName">
+                                    匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮
+                                </p>
+                                <p class="productPrice">
+                                    <strong>¥499.1</strong>
+                                    <del>¥699.1</del>
+                                </p>
+                                <div class="productParams">
+                                    <p class="size">
+                                        鞋码：40
+                                    </p>
+                                    <p class="num">
+                                        数量：2双
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell mui-transitioning">
+                        <!-- 侧滑模块 -->
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-blue" style="transform: translate(0px, 0px);">编辑</a>
+                            <a class="mui-btn mui-btn-red" style="transform: translate(0px, 0px);">删除</a>
+                        </div>
+                        <a class="mui-navigate-right mui-slider-handle">
+                            <div class="productPic">
+                                <img src="./images/product.jpg" alt="">
+                                <div class="mui-input-row mui-checkbox mui-left">
+                                    <input class="checkbox" name="checkbox" value="Item 2" type="checkbox">
+                                </div>
+                            </div>
+                            <div class="productDetail">
+                                <p class="productName">
+                                    匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮
+                                </p>
+                                <p class="productPrice">
+                                    <strong>¥499.1</strong>
+                                    <del>¥699.1</del>
+                                </p>
+                                <div class="productParams">
+                                    <p class="size">
+                                        鞋码：40
+                                    </p>
+                                    <p class="num">
+                                        数量：2双
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell mui-transitioning">
+                        <!-- 侧滑模块 -->
+                        <div class="mui-slider-right mui-disabled">
+                            <a class="mui-btn mui-btn-blue" style="transform: translate(0px, 0px);">编辑</a>
+                            <a class="mui-btn mui-btn-red" style="transform: translate(0px, 0px);">删除</a>
+                        </div>
+                        <a class="mui-navigate-right mui-slider-handle">
+                            <div class="productPic">
+                                <img src="./images/product.jpg" alt="">
+                                <div class="mui-input-row mui-checkbox mui-left">
+                                    <input class="checkbox" name="checkbox" value="Item 2" type="checkbox">
+                                </div>
+                            </div>
+                            <div class="productDetail">
+                                <p class="productName">
+                                    匡威三星标1970s converse复刻 142334c 144757c三星标黑色高帮
+                                </p>
+                                <p class="productPrice">
+                                    <strong>¥499.1</strong>
+                                    <del>¥699.1</del>
+                                </p>
+                                <div class="productParams">
+                                    <p class="size">
+                                        鞋码：40
+                                    </p>
+                                    <p class="num">
+                                        数量：2双
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- 订单 -->
+    <section id="order">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <div class="orderPrice">
+                    订单总额：<span>￥0.00</span>
+                </div>
+                <div class="orderBtn">
+                    <button type="button" class="mui-btn mui-btn-danger">生成订单</button>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="mui-row">
+            <div class="mui-col-xs-3"><a href="index.html"><i class="fa fa-home"></i><span>首页</span></a></div>
+            <div class="mui-col-xs-3"><a href="category.html"><i class="fa fa-bars"></i><span>分类</span></a></div>
+            <div class="mui-col-xs-3"><a class="active" href="cart.html"><i class="fa fa-shopping-cart"></i><span>购物车</span></a></div>
+            <div class="mui-col-xs-3"><a href="user.html"><i class="fa fa-user"></i><span>个人中心</span></a></div>
+        </div>
+    </footer>
+
+    <!-- 引入mui js文件 -->
+    <script src="./lib/mui/js/mui.js"></script>
+    <!-- 引入zepto js文件 -->
+    <script src="./lib/zepto/zepto.min.js"></script>
+    <!-- 引入模板引擎 -->
+    <script src="./lib/artTemplate/template-web.js"></script>
+    <!-- 引入自己写的js文件 -->
+    <script src="./js/cart.js"></script>
+</body>
+
+</html>

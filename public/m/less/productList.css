@@ -69,6 +69,25 @@ a {
   height: 100%;
   position: relative;
 }
+#main .search-form > form {
+  display: flex;
+  padding: .1rem;
+}
+#main .search-form > form .input-search {
+  flex: 1;
+  text-align: left;
+  font-size: .14rem;
+  border: 0.01rem solid #006699;
+  background-color: #fff;
+  border-radius: .06rem 0 0 0.06rem;
+  margin-bottom: 0;
+}
+#main .search-form > form .btn-search {
+  height: .34rem;
+  background-color: #006699;
+  border-color: #006699;
+  border-radius: 0 .06rem .06rem 0;
+}
 /* 底部 */
 #footer {
   background-color: #006699;
@@ -92,46 +111,31 @@ a {
 #footer a.active {
   color: #ffa500;
 }
-/* 主体 */
+/* 主体部分 */
 #main {
-  /* 导航条 */
-  /* 广告 */
-  /* 品牌 */
+  background-color: #fff;
 }
-#main a {
-  display: block;
+#main .productList .mui-card-header a {
+  font-size: .14rem;
 }
-#main a img {
-  width: 100%;
+#main .productList .mui-card-header a.active {
+  color: #f00;
 }
-#main .nav {
+#main .productList .mui-card-content .productBox {
+  box-shadow: 1px 0 0 #ccc;
   padding: .1rem;
 }
-#main .banner {
-  padding: 0 .1rem;
+#main .productList .mui-card-content .productBox a {
+  display: block;
+  text-align: center;
 }
-#main .banner .left a {
-  display: flex;
-}
-#main .banner .left a img {
-  width: 50%;
-  height: 1.2rem;
-}
-#main .banner .right a img {
-  height: 2.4rem;
-}
-#main .brand,
-#main .sport,
-#main .woman,
-#main .man {
-  padding: .1rem .1rem 0;
-}
-#main .brand img,
-#main .sport img,
-#main .woman img,
-#main .man img {
+#main .productList .mui-card-content .productBox a img {
   width: 100%;
 }
-#main .man {
-  padding-bottom: .1rem;
+#main .productList .mui-card-content .productBox a .productDetail {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }

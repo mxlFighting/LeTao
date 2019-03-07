@@ -69,6 +69,25 @@ a {
   height: 100%;
   position: relative;
 }
+#main .search-form > form {
+  display: flex;
+  padding: .1rem;
+}
+#main .search-form > form .input-search {
+  flex: 1;
+  text-align: left;
+  font-size: .14rem;
+  border: 0.01rem solid #006699;
+  background-color: #fff;
+  border-radius: .06rem 0 0 0.06rem;
+  margin-bottom: 0;
+}
+#main .search-form > form .btn-search {
+  height: .34rem;
+  background-color: #006699;
+  border-color: #006699;
+  border-radius: 0 .06rem .06rem 0;
+}
 /* 底部 */
 #footer {
   background-color: #006699;
@@ -94,44 +113,11 @@ a {
 }
 /* 主体 */
 #main {
-  /* 导航条 */
-  /* 广告 */
-  /* 品牌 */
+  background-color: #fff;
 }
-#main a {
-  display: block;
+#main .search-history span {
+  font-size: .14rem;
 }
-#main a img {
-  width: 100%;
-}
-#main .nav {
-  padding: .1rem;
-}
-#main .banner {
-  padding: 0 .1rem;
-}
-#main .banner .left a {
-  display: flex;
-}
-#main .banner .left a img {
-  width: 50%;
-  height: 1.2rem;
-}
-#main .banner .right a img {
-  height: 2.4rem;
-}
-#main .brand,
-#main .sport,
-#main .woman,
-#main .man {
-  padding: .1rem .1rem 0;
-}
-#main .brand img,
-#main .sport img,
-#main .woman img,
-#main .man img {
-  width: 100%;
-}
-#main .man {
-  padding-bottom: .1rem;
+#main .search-history ul li {
+  color: #666;
 }

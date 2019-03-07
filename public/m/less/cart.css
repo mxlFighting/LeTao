@@ -111,3 +111,58 @@ a {
 #footer a.active {
   color: #ffa500;
 }
+/* 主体 */
+#main ul li a {
+  display: flex;
+  white-space: normal;
+}
+#main ul li a .productPic {
+  position: relative;
+  width: .8rem;
+}
+#main ul li a .productPic img {
+  width: 100%;
+}
+#main ul li a .productPic .mui-checkbox {
+  height: 100%;
+}
+#main ul li a .productPic .mui-checkbox .checkbox {
+  top: auto;
+}
+#main ul li a .productPic .mui-checkbox .checkbox::before {
+  color: hotpink;
+  font-size: .24rem;
+}
+#main ul li a .productDetail {
+  flex: 1;
+}
+#main ul li a .productDetail .productPrice {
+  margin: .1rem 0;
+}
+#main ul li a .productDetail .productPrice strong {
+  color: #f00;
+}
+#main ul li a .productDetail .productParams {
+  display: flex;
+  justify-content: space-between;
+}
+#main ul li a .productDetail .productParams p {
+  color: #333;
+}
+/* 订单 */
+#order {
+  position: fixed;
+  bottom: .45rem;
+  left: 0;
+  width: 100%;
+}
+#order ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: .05rem;
+}
+#order ul li .orderPrice {
+  line-height: .33rem;
+  color: #f00;
+  font-weight: bold;
+}

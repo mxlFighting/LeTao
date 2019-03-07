@@ -31,34 +31,39 @@ a {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 99;
 }
 #header a {
   color: #fff;
 }
-#header .left {
-  width: .45rem;
-  height: .45rem;
-}
-#header .center {
-  flex: 1;
-  height: .45rem;
-}
-#header .center h4 {
-  text-align: center;
-  line-height: .45rem;
-  font-weight: normal;
-}
+#header .left,
 #header .right {
   width: .45rem;
   height: .45rem;
   text-align: center;
   line-height: .45rem;
 }
+#header .center {
+  flex: 1;
+  height: .45rem;
+  line-height: .45rem;
+}
+#header .center h4 {
+  text-align: center;
+  line-height: .45rem;
+  font-weight: normal;
+}
+#header .center input {
+  background-color: #fff;
+  font-size: .14rem;
+  text-align: left;
+  height: .35rem;
+  margin-bottom: 0;
+}
 /* 中间主体区域样式 */
 #main {
   height: 100vh;
   padding: .45rem 0;
-  position: relative;
 }
 #main .mui-scroll-wrapper {
   height: 100%;
@@ -71,6 +76,7 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 99;
 }
 #footer a {
   height: .45rem;
@@ -86,36 +92,29 @@ a {
 #footer a.active {
   color: #ffa500;
 }
-/* 头部 */
-#header .left {
-  text-align: center;
-  line-height: .45rem;
-}
-#header .center {
-  line-height: .45rem;
-}
-#header .center input {
-  background-color: #fff;
-  font-size: .14rem;
-  text-align: left;
-}
 /* 主体 */
 #main {
   display: flex;
+  background-color: #ccc;
 }
 #main .left {
   width: .8rem;
 }
-#main .left ul li {
-  margin-left: -0.4rem;
-  text-align: center;
-  line-height: .45rem;
-  background-color: #fff;
+#main .left .mui-table-view-cell:after {
+  left: 0;
 }
-#main .left ul li a {
-  width: 100%;
-  display: block;
+#main .left ul li.active {
+  background-color: #ccc;
 }
 #main .right {
+  padding: .1rem;
   flex: 1;
+}
+#main .right a {
+  background-color: #fff;
+  text-align: center;
+  display: block;
+}
+#main .right a img {
+  width: 100%;
 }

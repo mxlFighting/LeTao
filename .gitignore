@@ -53,7 +53,3 @@ node_modules
 # 我忽略了数据连接的文件
 
 数据库连接.txt
-
-# 忽略电商项目以及笔记
-电商项目.md
-README.md

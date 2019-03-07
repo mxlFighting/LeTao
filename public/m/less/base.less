@@ -39,27 +39,33 @@ a{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 99;
     a{
         color: #fff;
     }
-    .left{
-        width: .45rem;
-        height: .45rem;
-    }
-    .center{
-        flex: 1;
-        height: .45rem;
-        h4{
-            text-align: center;
-            line-height: .45rem;
-            font-weight: normal;
-        }
-    }
+    .left,
     .right{
         width: .45rem;
         height: .45rem;
         text-align: center;
         line-height: .45rem;
+    }
+    .center{
+        flex: 1;
+        height: .45rem;
+        line-height: .45rem;
+        h4{
+            text-align: center;
+            line-height: .45rem;
+            font-weight: normal;
+        }
+        input{
+            background-color: #fff;
+            font-size: .14rem;
+            text-align: left;
+            height: .35rem;
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -73,6 +79,26 @@ a{
         //把mui里面设置的绝对定位改成相对定位
         position: relative;
     }
+
+    .search-form>form{
+        display: flex;
+        padding: .1rem;
+        .input-search{
+            flex: 1;
+            text-align: left;
+            font-size: .14rem;
+            border: .01rem solid @main-color;
+            background-color: #fff;
+            border-radius: .06rem 0 0 0.06rem;
+            margin-bottom: 0;
+        }
+        .btn-search{
+            height: .34rem;
+            background-color: @main-color;
+            border-color: @main-color;
+            border-radius: 0 .06rem .06rem 0;
+        }
+    }
 }
 
 /* 底部 */
@@ -82,6 +108,7 @@ a{
     left: 0;
     bottom: 0;
     width: 100%;
+    z-index: 99;
     a{
         height: .45rem;
         color: #fff;

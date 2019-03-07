@@ -69,6 +69,25 @@ a {
   height: 100%;
   position: relative;
 }
+#main form {
+  display: flex;
+  padding: .1rem;
+}
+#main form input {
+  flex: 1;
+  text-align: left;
+  font-size: .14rem;
+  border: 0.01rem solid #006699;
+  background-color: #fff;
+  border-radius: .06rem 0 0 0.06rem;
+  margin-bottom: 0;
+}
+#main form button {
+  height: .34rem;
+  background-color: #006699;
+  border-color: #006699;
+  border-radius: 0 .06rem .06rem 0;
+}
 /* 底部 */
 #footer {
   background-color: #006699;
@@ -93,45 +112,33 @@ a {
   color: #ffa500;
 }
 /* 主体 */
-#main {
-  /* 导航条 */
-  /* 广告 */
-  /* 品牌 */
+#main .detail .productPrice strong {
+  color: #dd524d;
 }
-#main a {
-  display: block;
+#main .detail .productPrice del {
+  color: #666;
 }
-#main a img {
+#main .detail .productSize {
+  line-height: .33rem;
+}
+#main .detail .productSize .mui-btn {
+  position: static;
+  top: 0;
+  right: 0;
+  transform: none;
+  margin-bottom: .05rem;
+}
+/* 底部 */
+#footer {
+  background-color: #ccc;
+}
+#footer a i {
+  font-size: .20rem;
+  color: #333;
+}
+#footer .mui-col-xs-5 {
+  padding: .05rem;
+}
+#footer .mui-col-xs-5 button {
   width: 100%;
-}
-#main .nav {
-  padding: .1rem;
-}
-#main .banner {
-  padding: 0 .1rem;
-}
-#main .banner .left a {
-  display: flex;
-}
-#main .banner .left a img {
-  width: 50%;
-  height: 1.2rem;
-}
-#main .banner .right a img {
-  height: 2.4rem;
-}
-#main .brand,
-#main .sport,
-#main .woman,
-#main .man {
-  padding: .1rem .1rem 0;
-}
-#main .brand img,
-#main .sport img,
-#main .woman img,
-#main .man img {
-  width: 100%;
-}
-#main .man {
-  padding-bottom: .1rem;
 }

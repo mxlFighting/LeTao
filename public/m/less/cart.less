@@ -1,0 +1,66 @@
+@import 'base.less';
+
+/* 主体 */
+#main{
+    ul{
+        li{
+            a{
+                display: flex;
+                white-space: normal;
+                .productPic{
+                    position: relative;
+                    width: .8rem;
+                    img{
+                        width: 100%;
+                    }
+                    .mui-checkbox{
+                        height: 100%;   
+                        .checkbox{
+                           top: auto;
+                           &::before{
+                               color: hotpink;
+                               font-size: .24rem;
+                           }
+                        }
+                    }
+                }
+                .productDetail{
+                    flex: 1;
+                    .productPrice{
+                        margin: .1rem 0;
+                        strong{
+                            color: #f00;
+                        }
+                    }
+                    .productParams{
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            color: #333;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 订单 */
+#order{
+    position: fixed;
+    bottom: .45rem;
+    left: 0;
+    width: 100%;
+    ul{
+        li{
+            display: flex;
+            justify-content: space-between;
+            padding: .05rem;
+            .orderPrice{
+                line-height: .33rem;
+                color: #f00;
+                font-weight: bold;
+            }
+        }
+    }
+}

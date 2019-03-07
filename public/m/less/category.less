@@ -1,42 +1,32 @@
 @import 'base.less';
 
-/* 头部 */
-#header{
-    .left{
-        text-align: center;
-        line-height: .45rem;
-    }
-    .center{
-        line-height: .45rem;
-        input{
-            background-color: #fff;
-            font-size: .14rem;
-            text-align: left;
-        }
-    }
-}
-
 /* 主体 */
 #main{
     display: flex;
+    background-color: #ccc;
     .left{
         width: .8rem;
+        .mui-table-view-cell:after{
+            left: 0;
+        }
         ul{
-            // display: flex;
-            // flex-direction: column;
             li{
-                margin-left: -0.4rem;
-                text-align: center;
-                line-height: .45rem;
-                background-color: #fff;
-                a{
-                    width: 100%;
-                    display: block;
+                &.active{
+                    background-color: #ccc;
                 }
             }
         }
     }
     .right{
+        padding: .1rem;
         flex: 1;
+        a{
+            background-color: #fff;
+            text-align: center;
+            display: block; 
+            img{
+                width: 100%;
+            }
+        }
     }
 }
